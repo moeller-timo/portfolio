@@ -25,18 +25,22 @@
         }
         nav {
             display: flex;
+            flex-wrap: wrap;
             justify-content: center;
             background-color: #0059b3;
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
         }
         nav a {
             color: #fff;
-            padding: 1rem 2rem;
+            padding: 1rem;
             text-decoration: none;
             font-weight: 700;
+            flex: 1 1 auto;
+            text-align: center;
         }
         nav a:hover {
             background-color: #0073e6;
+            text-decoration: underline;
         }
         .container {
             padding: 2rem;
@@ -51,6 +55,7 @@
             padding: 1.5rem;
             border-radius: 8px;
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            flex-wrap: wrap;
         }
         .profile img {
             border-radius: 50%;
@@ -60,7 +65,7 @@
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
         }
         .profile div {
-            flex: 1;
+            flex: 1 1 100%;
         }
         h2 {
             color: #004080;
@@ -79,6 +84,11 @@
             display: flex;
             flex-direction: column;
             margin-bottom: 1rem;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .project:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
         }
         .project img {
             width: 100%;
@@ -88,6 +98,10 @@
         }
         .project p {
             margin-top: 0.5rem;
+        }
+        .project a {
+            text-decoration: none;
+            color: inherit;
         }
         footer {
             background-color: #004080;
@@ -112,6 +126,10 @@
             padding: 0.5rem;
             border: 1px solid #ccc;
             border-radius: 4px;
+            width: 100%;
+        }
+        textarea {
+            height: 150px; /* Increase the height of the textarea */
         }
         button {
             padding: 0.75rem;
@@ -133,6 +151,33 @@
             }
             .project {
                 flex: 1 1 calc(33.333% - 1rem);
+            }
+        }
+        @media (max-width: 767px) {
+            .profile {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            .profile img {
+                margin-right: 0;
+                margin-bottom: 1rem;
+            }
+            nav a {
+                padding: 0.5rem;
+            }
+        }
+        @media (max-width: 480px) {
+            header {
+                padding: 0.5rem;
+            }
+            .container {
+                padding: 1rem;
+            }
+            .about, .projects, .contact {
+                padding: 1rem;
+            }
+            nav a {
+                padding: 0.5rem 0.25rem;
             }
         }
     </style>
@@ -159,36 +204,52 @@
         <section id="projects" class="projects">
             <h2>Projects</h2>
             <div class="project">
-                <img src="project1.jpg" alt="Project 1">
-                <p>Project 1 Description</p>
+                <a href="https://example.com/project1">
+                    <img src="project1.jpg" alt="Project 1">
+                    <p>Project 1 Description</p>
+                </a>
             </div>
             <div class="project">
-                <img src="project2.jpg" alt="Project 2">
-                <p>Project 2 Description</p>
+                <a href="https://example.com/project2">
+                    <img src="project2.jpg" alt="Project 2">
+                    <p>Project 2 Description</p>
+                </a>
             </div>
             <div class="project">
-                <img src="project3.jpg" alt="Project 3">
-                <p>Project 3 Description</p>
+                <a href="https://example.com/project3">
+                    <img src="project3.jpg" alt="Project 3">
+                    <p>Project 3 Description</p>
+                </a>
             </div>
             <div class="project">
-                <img src="project4.jpg" alt="Project 4">
-                <p>Project 4 Description</p>
+                <a href="https://example.com/project4">
+                    <img src="project4.jpg" alt="Project 4">
+                    <p>Project 4 Description</p>
+                </a>
             </div>
             <div class="project">
-                <img src="project5.jpg" alt="Project 5">
-                <p>Project 5 Description</p>
+                <a href="https://example.com/project5">
+                    <img src="project5.jpg" alt="Project 5">
+                    <p>Project 5 Description</p>
+                </a>
             </div>
             <div class="project">
-                <img src="project6.jpg" alt="Project 6">
-                <p>Project 6 Description</p>
+                <a href="https://example.com/project6">
+                    <img src="project6.jpg" alt="Project 6">
+                    <p>Project 6 Description</p>
+                </a>
             </div>
             <div class="project">
-                <img src="project7.jpg" alt="Project 7">
-                <p>Project 7 Description</p>
+                <a href="https://example.com/project7">
+                    <img src="project7.jpg" alt="Project 7">
+                    <p>Project 7 Description</p>
+                </a>
             </div>
             <div class="project">
-                <img src="project8.jpg" alt="Project 8">
-                <p>Project 8 Description</p>
+                <a href="https://example.com/project8">
+                    <img src="project8.jpg" alt="Project 8">
+                    <p>Project 8 Description</p>
+                </a>
             </div>
         </section>
         <section id="contact" class="contact">
