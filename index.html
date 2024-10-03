@@ -4,31 +4,41 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Professional Portfolio</title>
+    <!-- Google Fonts: Roboto -->
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Externe CSS-Datei -->
     <link rel="stylesheet" href="styles.css">
+    <!-- Externe JavaScript-Datei -->
     <script src="script.js" defer></script>
 </head>
 <body>
     <header>
+        <!-- Hauptüberschrift der Seite -->
         <h1>Timo's Portfolio</h1>
     </header>
     <nav>
+        <!-- Navigation Links -->
         <a href="#about">About</a>
         <a href="#projects">Projects</a>
         <a href="#contact">Contact</a>
     </nav>
     <div class="container">
         <section id="about" class="about">
+            <!-- Abschnitt: Über mich -->
             <h2>About Me</h2>
             <div class="profile">
+                <!-- Profilbild -->
                 <img src="profile.jpg" alt="Profile Picture">
                 <div>
+                    <!-- Beschreibungstext -->
                     <p>TEXT</p>
                 </div>
             </div>
         </section>
         <section id="projects" class="projects">
+            <!-- Abschnitt: Projekte -->
             <h2>Projects</h2>
+            <!-- Einzelne Projekte -->
             <div class="project">
                 <a href="https://example.com/project1">
                     <img src="https://via.placeholder.com/300x200" alt="Project 1">
@@ -54,44 +64,50 @@
                 </a>
             </div>
             <div class="project">
-                <a href="https://example.com/project5">
+                <a href="https://example.com/project5"></a>
                     <img src="https://via.placeholder.com/300x200" alt="Project 5">
                     <p>Project 5 Description</p>
                 </a>
             </div>
             <div class="project">
-                <a href="https://example.com/project6">
+                <a href="https://example.com/project6"></a>
                     <img src="https://via.placeholder.com/300x200" alt="Project 6">
                     <p>Project 6 Description</p>
                 </a>
             </div>
             <div class="project">
-                <a href="https://example.com/project7">
+                <a href="https://example.com/project7"></a>
                     <img src="https://via.placeholder.com/300x200" alt="Project 7">
                     <p>Project 7 Description</p>
                 </a>
             </div>
             <div class="project">
-                <a href="https://example.com/project8">
+                <a href="https://example.com/project8"></a>
                     <img src="https://via.placeholder.com/300x200" alt="Project 8">
                     <p>Project 8 Description</p>
                 </a>
             </div>
         </section>
         <section id="contact" class="contact">
+            <!-- Abschnitt: Kontaktformular -->
             <h2>Contact Me</h2>
             <form>
+                <!-- Eingabefeld für Name -->
                 <label for="name">Name:</label>
                 <input type="text" id="name" name="name" required>
+                <!-- Eingabefeld für E-Mail -->
                 <label for="email">Email:</label>
                 <input type="email" id="email" name="email" required>
+                <!-- Eingabefeld für Nachricht -->
                 <label for="message">Message:</label>
                 <textarea id="message" name="message" required></textarea>
+                <!-- Absenden-Button -->
                 <button type="submit">Send</button>
             </form>
         </section>
     </div>
     <footer>
+        <!-- Fußzeile -->
         <p>&copy; 2023 Timo's Portfolio. All rights reserved.</p>
     </footer>
 </body>
